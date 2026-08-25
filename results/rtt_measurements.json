@@ -1,0 +1,11 @@
+{
+  "target_host": "db-<instance-id>.bravo.databases.cognodb.com",
+  "target_port": 7687,
+  "samples_count": 30,
+  "min_rtt_ms": 46.21,
+  "median_rtt_ms": 50.6,
+  "mean_rtt_ms": 53.73,
+  "p95_rtt_ms": 60.3,
+  "max_rtt_ms": 128.9,
+  "std_rtt_ms": 14.38
+}

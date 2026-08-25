@@ -1,0 +1,50 @@
+{
+  "benchmark-kuzu": {
+    "container_id": "ba7c44f925c1",
+    "image": "docker-kuzu",
+    "status": "running",
+    "nano_cpus": 500000000,
+    "effective_vcpu": 0.5,
+    "memory_bytes": 268435456,
+    "memory_mb": 256.0,
+    "memory_swap_bytes": 536870912,
+    "effective_swap_mb": 256.0,
+    "storage_quota_note": "OverlayFS on WSL2/Linux host without XFS project quota; actual disk store measured and reported per database."
+  },
+  "benchmark-memgraph": {
+    "container_id": "00a2a0bdb768",
+    "image": "memgraph/memgraph:2.18.0",
+    "status": "running",
+    "nano_cpus": 500000000,
+    "effective_vcpu": 0.5,
+    "memory_bytes": 268435456,
+    "memory_mb": 256.0,
+    "memory_swap_bytes": 536870912,
+    "effective_swap_mb": 256.0,
+    "storage_quota_note": "OverlayFS on WSL2/Linux host without XFS project quota; actual disk store measured and reported per database."
+  },
+  "benchmark-falkordb": {
+    "container_id": "02fb8bf81ac4",
+    "image": "falkordb/falkordb:v4.20.4",
+    "status": "running",
+    "nano_cpus": 500000000,
+    "effective_vcpu": 0.5,
+    "memory_bytes": 268435456,
+    "memory_mb": 256.0,
+    "memory_swap_bytes": 536870912,
+    "effective_swap_mb": 256.0,
+    "storage_quota_note": "OverlayFS on WSL2/Linux host without XFS project quota; actual disk store measured and reported per database."
+  },
+  "benchmark-age": {
+    "container_id": "a52b0cb36fd8",
+    "image": "apache/age:latest",
+    "status": "running",
+    "nano_cpus": 500000000,
+    "effective_vcpu": 0.5,
+    "memory_bytes": 268435456,
+    "memory_mb": 256.0,
+    "memory_swap_bytes": 536870912,
+    "effective_swap_mb": 256.0,
+    "storage_quota_note": "OverlayFS on WSL2/Linux host without XFS project quota; actual disk store measured and reported per database."
+  }
+}
