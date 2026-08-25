@@ -1,0 +1,67 @@
+services:
+  kuzu:
+    build:
+      context: .
+      dockerfile: Dockerfile.kuzu
+    container_name: benchmark-kuzu
+    ports:
+      - "7689:7689"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+
+  apache-age:
+    image: apache/age@sha256:cd6e62c12924b0e04f69f5f23326c94a55ac13e77a66c7594da1c4f4328a397d
+    container_name: benchmark-age
+    environment:
+      - POSTGRES_USER=${AGE_USER:-postgres}
+      - POSTGRES_PASSWORD=${AGE_PASSWORD:-}
+      - POSTGRES_DB=${AGE_DB:-postgres}
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - "5455:5432"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+
+  memgraph:
+    image: memgraph/memgraph:2.18.0
+    container_name: benchmark-memgraph
+    command: ["--log-level=WARNING"]
+    ports:
+      - "7688:7687"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+
+  falkordb:
+    image: falkordb/falkordb:v4.20.4
+    container_name: benchmark-falkordb
+    environment:
+      - BROWSER=0
+      - OMP_NUM_THREADS=1
+    ports:
+      - "6379:6379"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
