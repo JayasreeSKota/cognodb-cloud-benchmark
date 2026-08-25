@@ -1,0 +1,14 @@
+neo4j==6.2.0
+FalkorDB==1.7.1
+redis==8.1.0
+kuzu==0.11.3
+requests==2.34.2
+pandas==3.0.5
+numpy==2.5.2
+matplotlib==3.11.1
+seaborn==0.13.2
+python-dotenv==1.2.3
+tqdm==4.70.0
+tabulate==0.10.0
+psutil==7.2.2
+psycopg2-binary==2.9.12

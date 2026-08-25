@@ -1,0 +1,20 @@
+# Virtualenv
+venv/
+.env
+*.env
+
+# Data Archives
+data/*.txt.gz
+data/cit-HepPh.txt.gz
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# System / Temp
+.DS_Store
+Thumbs.db
+*.log
+/tmp/
