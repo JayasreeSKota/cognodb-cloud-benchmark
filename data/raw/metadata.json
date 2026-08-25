@@ -1,0 +1,26 @@
+{
+  "dataset_name": "Stanford SNAP cit-HepPh Citation Network",
+  "source_url": "https://snap.stanford.edu/data/cit-HepPh.txt.gz",
+  "source_sha256": "917e77b3344aed33fd2d849443c9512b7c528b9dc87251d4245fb3777bbe4128",
+  "nodes_csv_sha256": "1990ee79b16fca4e6e12c82dde3cbab13f7316e543724aafbe3d119b48a4c683",
+  "relationships_csv_sha256": "2ca5ad1ad8c1957c9de3cbc1441b2fd8ae496f72e57f7feafd40866fa2e238c6",
+  "num_nodes": 18317,
+  "num_relationships": 125000,
+  "relationship_type": "CITES",
+  "node_properties": [
+    "id",
+    "raw_snap_id",
+    "name",
+    "year",
+    "category",
+    "institution"
+  ],
+  "relationship_properties": [
+    "weight"
+  ],
+  "indexed_properties": [
+    "id",
+    "category",
+    "institution"
+  ]
+}
